@@ -1,0 +1,170 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- home page -->
+ <div class="app-page">
+  <div class="app-content">
+    <div class="menu-btn" (click)="show()"><img src="assets/menu.svg"></div>
+  <div class="container">
+      <!--NAV-->
+      <nav class="main-nav">
+          <ul class="main-menu">
+              <li><a href="#about" (click)="mini()">About</a></li>
+              <li ><a href="#skill" (click)="removeSkill()">Skills</a></li>
+              <li><a href="#education" (click)="removeEducation()">Education</a></li>
+              <li><a href="#portfolio" (click)="remove()">Portfolio</a></li>
+              <li><a href="#contact"  (click)="details()">Contact</a></li>
+              
+          </ul>
+      </nav>
+
+       <!-- SHOWCASE -->
+    <div class="showcase" [ngStyle]="{backgroundImage:'url(assets/workbench.jpg)'}">
+      <div class="cover">
+        <a href="#" class="btn">
+            Hello I'm
+        </a>
+        <div class="client-name"><p>Olanipekun Oladeji</p></div>
+          <small class="stack">
+              Mobile App Developer 
+          </small>
+      </div>
+  </div>
+
+  <!-- about us -->
+  <section class="about-us" id="about">
+    <div class="img-me">
+      <img src="assets/me.jpg">
+    </div>
+
+    <div class="about-me">
+      <h3>ABOUT ME</h3>
+      <p> 
+        A detail – oriented individual seeking a challenging yet rewarding entry level job position in a progressive
+        organization that will provide an opportunity to utilize my skills, experiences and ability in professional
+        capacity. and I would consider myself highly motivated, responsible, value-oriented, optimistic, and a fast learner, possessing excellent
+        client-facing Skills, natural problem solving and analytical skills. I’m a Front end developer who conceptualizes original ideas to bring
+        simplicity and user-friendliness to complex UI designs. Solving business problems by transforming UI designs and ideas to well
+        arrange and neat codes that meets client’s needs as prescribed by the company policy/decision.
+      </p>
+    </div>
+  </section>
+
+
+ 
+<!-- MY SKILLS SESSION -->
+<div class="skills" id="skill">
+  <h1>SKILLS</h1>
+  <div class="skill-container">
+      <div class="col-1">
+          <div class="skills-housing">
+                  <div class="top">
+                      <h2>LANGUAGES</h2>
+                  </div>   
+              <ul>
+                  <span>
+                      <li>HTML5</li>
+                      <li>CSS3</li>
+                      <li>JAVASCRIPT</li>
+                      <li>TYPESCRIPT</li>
+                  </span>
+              </ul>
+          </div>
+      </div> 
+      <div class="col-1">
+          <div class="skills-housing space">
+              <div class="top">
+                  <h2>FRAMEWORKS</h2>
+              </div>   
+              <ul>
+                  <span class="padding">
+                      <li> ANGULAR</li>
+                      <li>BOOSTRAP</li>
+                      <li>IONIC</li>
+                  </span>
+              </ul>
+          </div>
+      </div>
+    </div>         
+</div>
+
+<!-- Education session -->
+    <div class="Edu" id="education" [ngStyle]="{backgroundImage:'url(assets/education2.jpg)'}">
+      <div class="Education-container">
+        <h1>EDUCATION</h1>
+        <div class="school-1">
+            <div class="header">FEDERAL UNIVERSITY OF AGRICULTURE</div>
+            <div>BANKING AND FINANCE</div>
+            <div>2015 – 2019</div>
+        </div>
+        <div class="school-2">
+            <div class="header">FEDERAL POLYTECHNIC EDE</div>
+            <div>BANKING AND FINANCE</div>
+            <div>2011 – 2014</div>
+        </div>
+
+        <div class="sec-sch">
+            <div class=" header">EMMANUEL COLLEGE</div>
+            <div>SSCE</div>
+            <div>2003 – 2009</div>
+        </div>
+      </div>
+    </div>
+
+     <!-- portfolio session -->
+     <section class="portfolio" id="portfolio" [ngStyle]="{backgroundImage:'url(assets/portfolio.jpg)'}">
+       <div class="folio" id="education">
+        <div class="Education-container">
+          <h1 class="port">PORTFOLIO</h1>
+          <div class="projects">
+            <div>
+              <ul>
+                  <li><a href="https://github.com/oladeji1993">https://github.com/oladeji1993</a></li>
+                  <li><a href="https://microcopy.netlify.app/">https://microcopy.netlify.app/</a></li>
+                  <li><a href="https://mydatasite.netlify.app/">https://mydatasite.netlify.app/</a></li>
+              </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+     </section>
+
+<!-- Contact SESSION -->
+    <section class="contact" id="contact">
+      <div class="contact-me-2">
+        <div class="skills-housing">
+          <div class="top">
+              <h2>Contact</h2>
+          </div>   
+          <ul>
+              <span>
+                  <li>Olanipekunoladeji93@gmail.com</li>
+                  <li>+2348165573487</li>
+                  <li>oladeji93@twitter.com</li>
+                  <li> https://linkedin.com/in/oladeji-michael-675542109</li>
+              </span>
+          </ul>
+        </div>
+      </div>
+    </section>
+</div>
+</div>
+<footer class="main-footer">
+  <div class="footer-inner">
+      <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skill">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>    
+<script src="https://code.jquery.com/jquery-1.9.0.js"></script>
+
+
+
+<router-outlet></router-outlet>
